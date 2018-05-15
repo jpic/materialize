@@ -390,6 +390,10 @@
         }
       }
 
+      if (!this.isMultiple) {
+        values = values.slice(values.length - 1)
+      }
+
       this.input.value = values.join(', ');
     }
 
